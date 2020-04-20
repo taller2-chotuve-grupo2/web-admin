@@ -2,6 +2,10 @@
   "name": "web-admin",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://taller2-chotuve-grupo2.github.io/web-admin/",
+  "test": "CI=true react-scripts test --env=jsdom",
+  "test:coverage": "npm test -- --coverage",
+
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
