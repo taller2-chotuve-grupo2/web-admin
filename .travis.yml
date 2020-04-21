@@ -4,11 +4,10 @@ node_js:
 cache:
   directories:
     - node_modules
-
 script:
   - npm test
-after_success:
-  - npm test -- --coverage
+  - npm run test:coverage
+  - npm run build
 
 deploy:
   provider: pages
