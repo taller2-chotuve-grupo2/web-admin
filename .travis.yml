@@ -8,8 +8,7 @@ cache:
 script:
   - npm test
 after_success:
-  - npm run coverage
-  - npm run build
+  - npm test -- --coverage
 
 deploy:
   provider: pages
