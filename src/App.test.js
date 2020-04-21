@@ -1,8 +1,10 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen, getByText } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  var asd = []
-  expect()
+test('Renderiza texto Chotuve', () => {
+  const mensaje = 'Bienvenidos a Chotuve'
+
+  const { container, getByText } = render(<App />)
+  expect(getByText(mensaje)).toBeInTheDocument()
 });
