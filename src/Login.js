@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import {Button, Row, Container, Col, FormControl, InputGroup} from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import chotuveLogo from './chotuve.jpg'
