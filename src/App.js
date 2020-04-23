@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import "./index.css";
 import {Button, Row, Container, Col, FormControl, InputGroup} from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import chotuveLogo from './chotuve.jpg'
+
+document.body.style = 'background: black;';
 
 
 export default function LoginPage() {
@@ -10,10 +13,9 @@ export default function LoginPage() {
     const [usuario, setUsuario] = useState("");
     const [password, setPassword] = useState("");
 
-    
-
     return (
-        <div>
+        <div className="body-login">
+            <LoginHeader />
             <LoginRect usuario={usuario} password={password} setUsuario={setUsuario} setPassword={setPassword}/>
         </div>
   );
@@ -22,12 +24,29 @@ export default function LoginPage() {
 export class Login extends React.Component{
     render(){
         return(
-            <div className="example">
+            <div>
                 <LoginPage />
             </div>
         )
     }
 }
+
+class LoginHeader extends React.Component{
+    render() {
+        return(
+            <div>
+                <Container fluid="sm">
+                    <Row>
+                        <Col className="p-6 col-6">
+                        <img  src={chotuveLogo} alt="fireSpot"/>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+        )
+    }
+}
+
 
 class LoginRect extends React.Component{
     constructor(props) {
@@ -42,11 +61,9 @@ class LoginRect extends React.Component{
 
     render(){
         return(
-            <Container fluid="sm">
+            <Container fluid="sm login-cuadro">
             <Row className="d-flex justify-content-center align-items-center">
                 <Col className="p-4 col-4">
-    
-                    
     
                     <h1>Inicio de sesión</h1>
                     
@@ -66,7 +83,7 @@ class LoginRect extends React.Component{
                     </InputGroup>
     
                     {/* Input Group Contraseña */}
-                    <InputGroup className="mb-3" controlId="asd">
+                    <InputGroup className="mb-3">
                         <InputGroup.Prepend>
                             <InputGroup.Text id="basic-addon1">Contraseña</InputGroup.Text>
                         </InputGroup.Prepend>
@@ -87,9 +104,6 @@ class LoginRect extends React.Component{
                             this.props.setPassword("");
                         }
                     }>Login</Button>
-    
-    
-    
                 </Col>
             </Row>
         </Container>
