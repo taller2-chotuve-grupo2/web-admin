@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import * as login from './Login'
+import About from './About'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+import * as login from './LoginPage'
 
 document.body.style = 'background: black;';
 
@@ -15,8 +22,32 @@ export default function App() {
 
 
         <div className="body-login">
-            <login.LoginHeader />
-            <login.LoginRect usuario={usuario} password={password} setUsuario={setUsuario} setPassword={setPassword}/>
+            <Router>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to="/">Login</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">About</Link>
+                        </li>
+                    </ul>
+                </nav>
+
+                {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+                <Switch>
+                    <Route path="/about">
+                        <About />
+                    </Route>
+                    <Route path="/">
+                        <login.LoginHeader />
+                        <login.LoginRect usuario={usuario} password={password} setUsuario={setUsuario} setPassword={setPassword}/>
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
         </div>
   );
 }
