@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="updated package.json">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.workflow" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/react.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/react.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
     </list>
     <list id="eab6ce1b-ce0c-4389-8200-0bc73ac92d8e" name="Revert &quot;Pushed tik-tak-toe game&quot;" comment="Revert &quot;Pushed tik-tak-toe game&quot;&#10;&#10;This reverts commit 8414c5eb" />
@@ -143,7 +142,7 @@
       <workItem from="1587695417386" duration="4466000" />
       <workItem from="1587908919043" duration="6761000" />
       <workItem from="1587916538607" duration="11094000" />
-      <workItem from="1587933238711" duration="6021000" />
+      <workItem from="1587933238711" duration="7467000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1587389276953</created>
@@ -405,25 +404,25 @@
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
     <state x="802" y="254" key="FileChooserDialogImpl/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587915977485" />
-    <state width="948" height="272" key="GridCell.Tab.0.bottom" timestamp="1587936496522">
+    <state width="948" height="272" key="GridCell.Tab.0.bottom" timestamp="1587942201404">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="948" height="272" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587936496522" />
+    <state width="948" height="272" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587942201404" />
     <state width="1899" height="273" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587564517481" />
-    <state width="948" height="272" key="GridCell.Tab.0.center" timestamp="1587936496522">
+    <state width="948" height="272" key="GridCell.Tab.0.center" timestamp="1587942201404">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="948" height="272" key="GridCell.Tab.0.center/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587936496522" />
+    <state width="948" height="272" key="GridCell.Tab.0.center/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587942201404" />
     <state width="1899" height="273" key="GridCell.Tab.0.center/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587564517480" />
-    <state width="948" height="272" key="GridCell.Tab.0.left" timestamp="1587936496522">
+    <state width="948" height="272" key="GridCell.Tab.0.left" timestamp="1587942201403">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="948" height="272" key="GridCell.Tab.0.left/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587936496522" />
+    <state width="948" height="272" key="GridCell.Tab.0.left/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587942201403" />
     <state width="1899" height="273" key="GridCell.Tab.0.left/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587564517480" />
-    <state width="948" height="272" key="GridCell.Tab.0.right" timestamp="1587936496522">
+    <state width="948" height="272" key="GridCell.Tab.0.right" timestamp="1587942201404">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state width="948" height="272" key="GridCell.Tab.0.right/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587936496522" />
+    <state width="948" height="272" key="GridCell.Tab.0.right/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587942201404" />
     <state width="1899" height="273" key="GridCell.Tab.0.right/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587564517480" />
     <state width="933" height="356" key="GridCell.Tab.1.bottom" timestamp="1587699898574">
       <screen x="0" y="22" width="1920" height="1058" />
@@ -493,10 +492,10 @@
     <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587389953665" />
     <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587938876812" />
     <state x="2665" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587563151169" />
-    <state x="851" y="198" width="614" height="762" key="find.popup" timestamp="1587934916554">
+    <state x="851" y="198" width="614" height="762" key="find.popup" timestamp="1587942566210">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state x="851" y="198" width="614" height="762" key="find.popup/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587934916554" />
+    <state x="851" y="198" width="614" height="762" key="find.popup/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587942566210" />
     <state x="624" y="247" key="run.anything.popup" timestamp="1587919992523">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
@@ -515,7 +514,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Routes.js</url>
-          <line>27</line>
+          <line>26</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

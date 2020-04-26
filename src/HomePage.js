@@ -30,11 +30,11 @@ class HomeHeader extends React.Component {
     }
 
     redirectHome = () => {
-        this.props.hst.push("/home");
+        this.props.hst.push(process.env.PUBLIC_URL + "/home");
     }
 
     redirectAbout = () => {
-        this.props.hst.push("/about");
+        this.props.hst.push(process.env.PUBLIC_URL + "/about");
     }
 
 
