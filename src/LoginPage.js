@@ -1,16 +1,18 @@
 import React, {useState} from 'react';
 import {Button, Row, Container, Col, FormControl, InputGroup} from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useHistory } from 'react-router-dom';
 import chotuveLogo from './chotuve.png'
 
 
 export function Login(){
     const [usuario, setUsuario] = useState("");
     const [password, setPassword] = useState("");
+    let history = useHistory();
         return ([
             <LoginHeader/>,
             <LoginRect usuario={usuario} password={password} setUsuario={setUsuario}
-                       setPassword={setPassword}/>
+                       setPassword={setPassword} history={history}/>
         ])
 }
 
@@ -40,7 +42,12 @@ class LoginRect extends React.Component {
             password: null,
             setUsuario: null,
             setPassword: null,
+            history: null,
         };
+    }
+
+    redirectToAbout = () => {
+        validate_credentials(this.props.usuario, this.props.password, this.props.history);
     }
 
     render() {
@@ -84,13 +91,18 @@ class LoginRect extends React.Component {
 
                         {/* Boton Log In */}
                         <Button onClick={() => {
-                            this.props.setUsuario("");
-                            this.props.setPassword("");
+                            this.redirectToAbout();
                         }
                         }>Login</Button>
                     </Col>
                 </Row>
             </Container>
         )
+    }
+}
+
+function validate_credentials(user, password, history){
+    if (user === 'admin' && password === 'admin'){
+        history.push('/about');
     }
 }
