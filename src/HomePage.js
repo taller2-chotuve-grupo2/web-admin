@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 //import { useHistory } from 'react-router-dom';
-import {Col, Button, Row, Navbar, Nav } from "react-bootstrap";
+import {Col, Button, Row, Container, Navbar, Nav } from "react-bootstrap";
 import chotuveLogo from "./chotuve.png";
 import "./index.css";
 import { Redirect } from 'react-router-dom';
@@ -22,11 +22,12 @@ class HomeHeader extends React.Component {
     render() {
         return (
             <div>
+                <Container fluid>
                     <Row>
-                        <Col>
-                            <img src={chotuveLogo} class="rounded float-left" alt="chotuve-logo"/>
-                        </Col>
+                        <img src={chotuveLogo} class="rounded float-left" alt="chotuve-logo"/>
                     </Row>
+                </Container>
+
                 <div>
                     <Navbar bg="dark" expand="lg">
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
