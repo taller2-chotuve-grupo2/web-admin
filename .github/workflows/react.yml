@@ -2,7 +2,7 @@ name: ReactCI
 on:
   push:
     branches:
-      - master
+      - master, gh-pages-test
 jobs:
   build:
     runs-on: ubuntu-latest
