@@ -4,11 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {Col, Button, Row, Navbar, Nav } from "react-bootstrap";
 import chotuveLogo from "./chotuve.png";
 import "./index.css";
+import { Redirect } from 'react-router-dom';
 
 
 
 export default function Home() {
-    //let history = useHistory();
+    if(!localStorage.getItem('user')){
+        return <Redirect to="/login"/>;
+    }
     return ([
         <HomeHeader/>,
         <HomeRect/>
