@@ -4,27 +4,46 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {Button, Row, Container, Navbar, Nav } from "react-bootstrap";
 import chotuveLogo from "./chotuve.png";
 import "./index.css";
-import { Redirect } from 'react-router-dom';
+import { Redirect, useHistory } from 'react-router-dom';
 
 
 
 export default function Home() {
+    
+    let history = useHistory();
     if(!localStorage.getItem('user')){
         return <Redirect to="/login"/>;
     }
     return ([
-        <HomeHeader/>,
+        <HomeHeader hst={history}/>,
         <HomeRect/>
     ])
 }
 
 class HomeHeader extends React.Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            hst: null,
+        }
+    }
+
+    redirectHome = () => {
+        this.props.hst.push("/home");
+    }
+
+    redirectAbout = () => {
+        this.props.hst.push("/about");
+    }
+
+
     render() {
         return (
             <div>
                 <Container fluid>
                     <Row>
-                        <img src={chotuveLogo} class="rounded float-left" alt="chotuve-logo"/>
+                        <img src={chotuveLogo} className="rounded float-left" alt="chotuve-logo"/>
                     </Row>
                 </Container>
 
@@ -33,8 +52,8 @@ class HomeHeader extends React.Component {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
-                                <Button variant="dark" href="/home">Home</Button>
-                                <Button variant="dark" href="/about">Link</Button>
+                                <Button variant="dark" onClick={this.redirectHome}>Home</Button>
+                                <Button variant="dark" onClick={this.redirectAbout}>Link</Button>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
