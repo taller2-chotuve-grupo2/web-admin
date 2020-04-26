@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Added Routes class" />
+    <list id="eab6ce1b-ce0c-4389-8200-0bc73ac92d8e" name="Revert &quot;Pushed tik-tak-toe game&quot;" comment="Revert &quot;Pushed tik-tak-toe game&quot;&#10;&#10;This reverts commit 8414c5eb" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="ProjectId" id="1ao311yhT6sYZ8iiE6hLIukqEkD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/coverage/lcov-report/App.js.html" />
+    <property name="javascript.karma.karma_node_package_dir" value="##Select package" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.cucumber.cucumber_node_package_dir" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.16.2/bin/node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <jest-options value="coverall" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="App.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v12.16.2/bin/node" />
+      <package-manager value="npm" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.All Tests" />
+      <item itemvalue="Jest.App.test.js" />
+      <item itemvalue="npm.start" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.App.test.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="" />
+      <created>1587387901424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587387901424</updated>
+      <workItem from="1587387908033" duration="3193000" />
+      <workItem from="1587438866987" duration="7843000" />
+      <workItem from="1587446856681" duration="849000" />
+      <workItem from="1587563135293" duration="1382000" />
+      <workItem from="1587581737637" duration="556000" />
+      <workItem from="1587602707020" duration="2149000" />
+      <workItem from="1587605803754" duration="6880000" />
+      <workItem from="1587685640112" duration="4178000" />
+      <workItem from="1587695322668" duration="81000" />
+      <workItem from="1587695417386" duration="4466000" />
+      <workItem from="1587908919043" duration="3045000" />
+    </task>
+    <task id="LOCAL-00001" summary=".travis.yml">
+      <created>1587389276953</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587389276953</updated>
+    </task>
+    <task id="LOCAL-00002" summary=".travis.yml without coverage">
+      <created>1587389478051</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587389478051</updated>
+    </task>
+    <task id="LOCAL-00003" summary=".travis.yml with coverage">
+      <created>1587389970107</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587389970108</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".travis.yml with coverage trying">
+      <created>1587390151926</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587390151927</updated>
+    </task>
+    <task id="LOCAL-00005" summary=".travisyml with coverage trying">
+      <created>1587390226578</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587390226578</updated>
+    </task>
+    <task id="LOCAL-00006" summary=".travisyml with coverage uncommented">
+      <created>1587390348178</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587390348178</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test changes in travis.yml">
+      <created>1587440339860</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587440339860</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added forgotten script">
+      <created>1587440466271</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587440466271</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updated script">
+      <created>1587440936421</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587440936421</updated>
+    </task>
+    <task id="LOCAL-00010" summary="updated yarn">
+      <created>1587441541498</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587441541498</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated yml">
+      <created>1587441814373</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587441814373</updated>
+    </task>
+    <task id="LOCAL-00012" summary="updated yml">
+      <created>1587443949240</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587443949240</updated>
+    </task>
+    <task id="LOCAL-00013" summary="updated yml">
+      <created>1587444119781</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1587444119781</updated>
+    </task>
+    <task id="LOCAL-00014" summary="updated yml">
+      <created>1587445577684</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587445577684</updated>
+    </task>
+    <task id="LOCAL-00015" summary="updated yml">
+      <created>1587445747695</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1587445747695</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update package.json">
+      <created>1587446543411</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1587446543411</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Login.js">
+      <created>1587611045671</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1587611045671</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fixed imports">
+      <created>1587612072160</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1587612072160</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed imports">
+      <created>1587612202548</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1587612202548</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fixed imports">
+      <created>1587612377381</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1587612377381</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added Routes class">
+      <created>1587911730003</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1587911730003</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_WIDTH">
+                <map>
+                  <entry key="2" value="178" />
+                  <entry key="3" value="177" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=".travis.yml" />
+    <MESSAGE value=".travis.yml without coverage" />
+    <MESSAGE value=".travis.yml with coverage" />
+    <MESSAGE value=".travis.yml with coverage trying" />
+    <MESSAGE value=".travisyml with coverage trying" />
+    <MESSAGE value=".travisyml with coverage uncommented" />
+    <MESSAGE value="test changes in travis.yml" />
+    <MESSAGE value="added forgotten script" />
+    <MESSAGE value="updated script" />
+    <MESSAGE value="updated yarn" />
+    <MESSAGE value="updated yml" />
+    <MESSAGE value="update package.json" />
+    <MESSAGE value="Login.js" />
+    <MESSAGE value="Fixed imports" />
+    <MESSAGE value="Added Routes class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Routes class" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="854" y="464" key="#ESLint" timestamp="1587610576181">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="854" y="464" key="#ESLint/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587610576181" />
+    <state x="599" y="222" key="#Inspections" timestamp="1587446381473">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="599" y="222" key="#Inspections/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587446381473" />
+    <state x="2436" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587563595998">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="516" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587443262024" />
+    <state x="2436" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587563595998" />
+    <state x="682" y="344" width="565" height="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587687340331">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="682" y="344" width="565" height="392" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587687340331" />
+    <state x="698" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587613169342">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="698" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587613169342" />
+    <state x="2554" y="238" key="#run" timestamp="1587563569268">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2554" y="238" key="#run/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587563569268" />
+    <state x="481" y="110" key="CommitChangelistDialog2" timestamp="1587390184850">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="481" y="110" key="CommitChangelistDialog2/0.22.1920.1058@0.22.1920.1058" timestamp="1587390184850" />
+    <state x="192" y="104" key="DiffContextDialog" timestamp="1587443967545">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="192" y="104" key="DiffContextDialog/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587443967545" />
+    <state x="802" y="254" key="FileChooserDialogImpl" timestamp="1587605798902">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="802" y="254" key="FileChooserDialogImpl/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587605798902" />
+    <state width="933" height="272" key="GridCell.Tab.0.bottom" timestamp="1587910260725">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="272" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587910260725" />
+    <state width="1899" height="273" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587564517481" />
+    <state width="933" height="272" key="GridCell.Tab.0.center" timestamp="1587910260725">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="272" key="GridCell.Tab.0.center/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587910260725" />
+    <state width="1899" height="273" key="GridCell.Tab.0.center/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587564517480" />
+    <state width="933" height="272" key="GridCell.Tab.0.left" timestamp="1587910260724">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="272" key="GridCell.Tab.0.left/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587910260724" />
+    <state width="1899" height="273" key="GridCell.Tab.0.left/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587564517480" />
+    <state width="933" height="272" key="GridCell.Tab.0.right" timestamp="1587910260725">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="272" key="GridCell.Tab.0.right/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587910260725" />
+    <state width="1899" height="273" key="GridCell.Tab.0.right/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587564517480" />
+    <state width="933" height="356" key="GridCell.Tab.1.bottom" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state width="933" height="356" key="GridCell.Tab.1.center" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.1.center/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state width="933" height="356" key="GridCell.Tab.1.left" timestamp="1587699898573">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.1.left/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898573" />
+    <state width="933" height="356" key="GridCell.Tab.1.right" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.1.right/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state width="933" height="356" key="GridCell.Tab.2.bottom" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.2.bottom/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state width="933" height="356" key="GridCell.Tab.2.center" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.2.center/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state width="933" height="356" key="GridCell.Tab.2.left" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.2.left/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state width="933" height="356" key="GridCell.Tab.2.right" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.2.right/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state width="933" height="356" key="GridCell.Tab.3.bottom" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.3.bottom/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state width="933" height="356" key="GridCell.Tab.3.center" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.3.center/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state width="933" height="356" key="GridCell.Tab.3.left" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.3.left/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state width="933" height="356" key="GridCell.Tab.3.right" timestamp="1587699898574">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state width="933" height="356" key="GridCell.Tab.3.right/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
+    <state x="192" y="93" key="MergeDialog" timestamp="1587609314482">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="192" y="93" key="MergeDialog/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587609314482" />
+    <state x="538" y="154" key="SettingsEditor" timestamp="1587695554896">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="454" y="186" key="SettingsEditor/0.22.1920.1058@0.22.1920.1058" timestamp="1587387964279" />
+    <state x="538" y="154" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587695554896" />
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1587911733223">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587390352398" />
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587911733223" />
+    <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587911705048">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587389953665" />
+    <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587911705048" />
+    <state x="2665" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587563151169" />
+    <state x="653" y="159" width="614" height="762" key="find.popup" timestamp="1587688275903">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="653" y="159" width="614" height="762" key="find.popup/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587688275903" />
+    <state x="624" y="247" key="run.anything.popup" timestamp="1587699317074">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="624" y="247" key="run.anything.popup/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699317074" />
+    <state x="623" y="239" key="search.everywhere.popup" timestamp="1587444886305">
+      <screen x="0" y="22" width="1920" height="1058" />
+    </state>
+    <state x="623" y="239" key="search.everywhere.popup/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587444886305" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/App.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/web_admin$App_test_js.info" NAME="App.test.js Coverage Results" MODIFIED="1587443228590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
