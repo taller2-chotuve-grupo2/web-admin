@@ -28,7 +28,6 @@ class LoginHeader extends React.Component {
                     </Row>
                 </Container>
             </div>
-
         )
     }
 }

@@ -17,3 +17,8 @@ body {
   background-color: black;
   /* height: 50vw; */
 }
+
+.navbar,
+.navbar-default {
+  background-image: linear-gradient(to bottom, #f90 0, #f90 100%) !important; /* override background image gradient w/ flat color */
+}
