@@ -45,8 +45,16 @@ class LoginRect extends React.Component {
         };
     }
 
-    redirectToAbout = () => {
+    
+    redirectToHome = () => {
         validate_credentials(this.props.usuario, this.props.password, this.props.history);
+    }
+    
+    enterPressed(event) {
+        var code = event.keyCode || event.which;
+        if(code === 13) { //13 is the enter keycode
+            this.redirectToHome();
+        } 
     }
 
     render() {
@@ -68,6 +76,7 @@ class LoginRect extends React.Component {
                                 placeholder="Usuario"
                                 aria-label="Usuario"
                                 aria-describedby="basic-addon1"
+                                onKeyPress={this.enterPressed.bind(this)}
                                 onChange={e => this.props.setUsuario(e.target.value)}
                             />
                         </InputGroup>
@@ -84,13 +93,14 @@ class LoginRect extends React.Component {
                                 placeholder="Constraseña"
                                 aria-label="Contraseña"
                                 aria-describedby="basic-addon1"
+                                onKeyPress={this.enterPressed.bind(this)}
                                 onChange={e => this.props.setPassword(e.target.value)}
                             />
                         </InputGroup>
 
                         {/* Boton Log In */}
                         <Button onClick={() => {
-                            this.redirectToAbout();
+                            this.redirectToHome();
                         }
                         }>Login</Button>
                     </Col>
