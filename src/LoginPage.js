@@ -115,4 +115,7 @@ function validate_credentials(user, password, history){
         localStorage.setItem('user', user);
         history.push('/home');
     }
+    else{
+        alert("Usuario o contraseña invalidos!")
+    }
 }
