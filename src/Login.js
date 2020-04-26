@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Button, Row, Container, Col, FormControl, InputGroup} from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import chotuveLogo from './chotuve.jpg'
@@ -47,9 +47,9 @@ export class LoginRect extends React.Component{
 
     render(){
         return(
-            <Container fluid="sm">
+            <Container fluid="sm login-cuadro">
             <Row className="d-flex justify-content-center align-items-center">
-                <Col className="p-4 col-4 login-cuadro">
+                <Col className="p-4 col-4">
 
                     <h1>Inicio de sesión</h1>
 
