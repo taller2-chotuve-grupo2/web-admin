@@ -11,20 +11,19 @@ import Home from './HomePage';
 
 export default class Routes extends Component {
 
-
     render() {
         return (
             <div className="body-login">
                 <BrowserRouter>
                     <div>
                         <Switch>
-                            <Route path="/about">
+                            <Route path={process.env.PUBLIC_URL + "/about"}>
                                 <About/>
                             </Route>
-                            <Route path="/home">
+                            <Route path={process.env.PUBLIC_URL + "/home"}>
                                 <Home/>
                             </Route>
-                            <Route path="/">
+                            <Route path={process.env.PUBLIC_URL + "/"}>
                                 <login.Login/>
                             </Route>
 

@@ -26,5 +26,5 @@ export default function About(){
 
 function logOut(history){
     localStorage.removeItem('user');
-    history.push("/")
+    history.push(process.env.PUBLIC_URL + "/")
 }

@@ -113,7 +113,7 @@ class LoginRect extends React.Component {
 function validate_credentials(user, password, history){
     if (user === 'admin' && password === 'admin'){
         localStorage.setItem('user', user);
-        history.push('/home');
+        history.push(process.env.PUBLIC_URL + '/home');
     }
     else{
         alert("Usuario o contraseña invalidos!")
