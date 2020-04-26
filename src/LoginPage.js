@@ -102,6 +102,7 @@ class LoginRect extends React.Component {
 
 function validate_credentials(user, password, history){
     if (user === 'admin' && password === 'admin'){
+        localStorage.setItem('user', user);
         history.push('/about');
     }
 }
