@@ -19,12 +19,6 @@ jobs:
       run:  yarn install
     - name: Build packages
       run:  yarn build
-  # - name: Deploy to GH Pages
-   #   run: |
-    #    git config --global user.email "iignaciovelasco@gmail.com>"
-     #   git config --global user.name "IgVelasco>"
-      #  https://0d5f826cbc0de0d498821c96b5a7fc0c4a59507a@github.com/taller2-chotuve-grupo2/web-admin.git
-       # yarn start    
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
