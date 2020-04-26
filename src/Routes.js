@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import About from './About'
 import {
-    BrowserRouter,
+    HashRouter,
     Switch,
     Route
 } from "react-router-dom";
@@ -14,7 +14,7 @@ export default class Routes extends Component {
     render() {
         return (
             <div className="body-login">
-                <BrowserRouter>
+                <HashRouter>
                     <div>
                         <Switch>
                             <Route path={process.env.PUBLIC_URL + "/about"}>
@@ -29,7 +29,7 @@ export default class Routes extends Component {
 
                         </Switch>
                     </div>
-                </BrowserRouter>
+                </HashRouter>
             </div>
         )
     }

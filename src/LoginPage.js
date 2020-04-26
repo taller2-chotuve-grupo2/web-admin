@@ -105,6 +105,9 @@ class LoginRect extends React.Component {
                         }>Login</Button>
                     </Col>
                 </Row>
+                <h1>
+                    {console.log(process.env.PUBLIC_URL) }
+                </h1>
             </Container>
         )
     }
