@@ -14,7 +14,7 @@ export default class Routes extends Component {
     render() {
         return (
             <div className="body-login">
-                <HashRouter>
+                <HashRouter basename="web-admin">
                     <div>
                         <Switch>
                             <Route path={process.env.PUBLIC_URL + "/about"}>
