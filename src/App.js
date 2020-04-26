@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.css';
+import "./index.css";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Routes from './Routes'
 
-function App() {
-    return(
-        <div className="App">
-            <h1>Bienvenidos a Chotuve</h1>
-        </div>
+
+document.body.style = 'background: black;';
+
+
+export default function App() {
+    // Declare a new state variable, which we'll call "count"
+    //const [count, setCount] = useState(0);
+    return (
+        <Routes/>
     );
 }
-
-export default App;
