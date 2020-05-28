@@ -1,7 +1,29 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color: black;
+}
+
+.background-red {
+  background-color: red;
+}
+
 .login-cuadro{
-  position: absolute;
-  margin: 0 auto;
-  left: 50%; /* centers #box in its containing element */
-  margin-left: -15%; /* half the element's width (30%) */
-  background-color: #b53f06;
+  background-color: #fe9900;
+  border-radius: 25px;
+}
+
+.body-login{
+  background-color: black;
+  /* height: 50vw; */
+}
+
+.navbar,
+.navbar-default {
+  background-image: linear-gradient(to bottom, #f90 0, #f90 100%) !important; /* override background image gradient w/ flat color */
+}
+
+.btn{
+  margin-right:5px;
+  background-image: linear-gradient(to bottom, black, black 100%) !important; /* override background image gradient w/ flat color */
 }
