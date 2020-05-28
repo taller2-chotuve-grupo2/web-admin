@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Button, Row, Container, Col, FormControl, InputGroup} from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useHistory } from 'react-router-dom';
-import chotuveLogo from './chotuve.png'
+import chotuveLogo from '../storage/chotuve.png'
 import axios from 'axios'
 
 const loginApi = 'https://chotuve-grupo2-auth-server-dev.herokuapp.com/login/';

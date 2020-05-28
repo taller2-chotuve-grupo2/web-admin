@@ -1,11 +1,11 @@
 import React  from 'react';
-import "./index.css";
+import "../index.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Redirect, useHistory } from 'react-router-dom';
 import {Button} from "react-bootstrap"
 
 
-export default function About(){
+export default function AboutPage(){
 
     let history = useHistory();
 

@@ -19,12 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="hashrouter usage">
+    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Basic login with authserver">
+      <change afterPath="$PROJECT_DIR$/src/controller/authServerController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/UsersPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chotuve.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/chotuve.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <list id="eab6ce1b-ce0c-4389-8200-0bc73ac92d8e" name="Revert &quot;Pushed tik-tak-toe game&quot;" comment="Revert &quot;Pushed tik-tak-toe game&quot;&#10;&#10;This reverts commit 8414c5eb" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +53,31 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1590627821" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1590627820" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1ao311yhT6sYZ8iiE6hLIukqEkD" />
   <component name="ProjectViewState">
@@ -77,6 +107,12 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/storage" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/routes" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src" />
@@ -147,6 +183,7 @@
       <workItem from="1587933238711" duration="8785000" />
       <workItem from="1590359449946" duration="4748000" />
       <workItem from="1590451724257" duration="11000" />
+      <workItem from="1590627547324" duration="4086000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1587389276953</created>
@@ -337,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587943405991</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Basic login with authserver">
+      <created>1590627722580</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1590627722580</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +428,8 @@
     <MESSAGE value="updated package.json" />
     <MESSAGE value="Another fix routing" />
     <MESSAGE value="hashrouter usage" />
-    <option name="LAST_COMMIT_MESSAGE" value="hashrouter usage" />
+    <MESSAGE value="Basic login with authserver" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic login with authserver" />
   </component>
   <component name="WindowStateProjectService">
     <state x="854" y="464" key="#ESLint" timestamp="1587610576181">
@@ -395,10 +440,10 @@
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
     <state x="599" y="222" key="#Inspections/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587446381473" />
-    <state x="2436" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587563595998">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="516" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590628813851">
+      <screen x="0" y="22" width="1920" height="1058" />
     </state>
-    <state x="516" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587443262024" />
+    <state x="516" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1590628813851" />
     <state x="2436" y="149" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587563595998" />
     <state x="682" y="344" width="565" height="392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587687340331">
       <screen x="0" y="22" width="1920" height="1058" />
@@ -517,11 +562,11 @@
     </state>
     <state x="454" y="186" key="SettingsEditor/0.22.1920.1058@0.22.1920.1058" timestamp="1587387964279" />
     <state x="538" y="154" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587695554896" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1587943410072">
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1590627726486">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587390352398" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587943410072" />
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1590627726486" />
     <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587938876812">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
@@ -551,12 +596,12 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Routes.js</url>
+          <url>file://$PROJECT_DIR$/src/routes/Routes.js</url>
           <line>26</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/LoginPage.js</url>
+          <url>file://$PROJECT_DIR$/src/pages/LoginPage.js</url>
           <line>142</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
