@@ -3,6 +3,9 @@ import {Button, Row, Container, Col, FormControl, InputGroup} from "react-bootst
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useHistory } from 'react-router-dom';
 import chotuveLogo from './chotuve.png'
+import axios from 'axios'
+
+const loginApi = 'https://chotuve-grupo2-auth-server-dev.herokuapp.com/login/';
 
 
 export function Login(){
@@ -113,12 +116,35 @@ class LoginRect extends React.Component {
     }
 }
 
-function validate_credentials(user, password, history){
-    if (user === 'admin' && password === 'admin'){
+async function validate_credentials(user, password, history) {
+/*    if (user === 'admin' && password === 'admin') {
         localStorage.setItem('user', user);
         history.push('/home');
+    } else {
+        alert("Usuario o contraseña invalidos!")
+    }*/
+
+
+    const data = {
+        username: user,
+        password: password
+    };
+
+    const AxiosConfig = {
+        headers:{
+            'Content-Type': 'application/json',
+            'Authorization': 'Basic YWxhZGRpbjpvcGVuc2VzYW1l'
+        }
     }
-    else{
+
+    const res = await axios.post(loginApi, data, AxiosConfig)
+    if (res.status === 200) {
+        localStorage.setItem('user', user);
+        console.log(res.data['token'])
+        localStorage.setItem('token', res.data['token'])
+        history.push('/home');
+    }else {
         alert("Usuario o contraseña invalidos!")
     }
+
 }
