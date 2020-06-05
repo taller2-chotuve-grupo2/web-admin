@@ -109,7 +109,6 @@ class LoginRect extends React.Component {
                     </Col>
                 </Row>
                 <h1>
-                    {console.log(process.env.PUBLIC_URL) }
                 </h1>
             </Container>
         )
@@ -140,7 +139,6 @@ async function validate_credentials(user, password, history) {
     const res = await axios.post(loginApi, data, AxiosConfig)
     if (res.status === 200) {
         localStorage.setItem('user', user);
-        console.log(res.data['token'])
         localStorage.setItem('token', res.data['token'])
         history.push('/home');
     }else {
