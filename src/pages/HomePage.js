@@ -56,8 +56,8 @@ export class HomeHeader extends React.Component {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
                                 <Button variant="dark" onClick={this.redirectHome}>Home</Button>
-                                <Button variant="dark" onClick={this.redirectAbout}>Link</Button>
                                 <Button variant="dark" onClick={this.redirectToUsers}>Users</Button>
+                                <Button variant="dark" onClick={this.redirectAbout}>Link</Button>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>

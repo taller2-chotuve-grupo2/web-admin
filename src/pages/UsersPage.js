@@ -5,6 +5,7 @@ import {Redirect, useHistory} from 'react-router-dom';
 import {HomeHeader, HomeRect} from "./HomePage";
 import JsonTable from "ts-react-json-table";
 import axios from "axios";
+import styles from '../styles/usersTable.css'
 
 const usersApi = 'https://chotuve-grupo2-auth-server-dev.herokuapp.com/users'
 
@@ -26,7 +27,14 @@ class UsersBody extends React.Component {
     constructor() {
         super();
         this.state = {
-            usersData: []
+            usersData: [],
+            columns: [
+                {key: 'username', label: 'Username'},
+                {key: 'password', label: 'Password'},
+                {key: 'email', label: 'Email'},
+                {key: 'createdAt', label: 'Creation Date'},
+                {key: 'updatedAt', label: 'Last Update'}
+            ]
         }
 
         this.handleApiResponse = this.handleApiResponse.bind(this)
@@ -51,20 +59,19 @@ class UsersBody extends React.Component {
         this.getUsersFromAuth(data, axiosConfig)
     }
 
-    render()
-    {
+    render() {
         console.log(this.state.usersData)
-        return <JsonTable rows =  {this.state.usersData} />
+        return <JsonTable rows={this.state.usersData} columns={this.state.columns} class={styles}
+                          settings={ {'noRowsMessage': 'Loading or no permissions'}}/>
     }
 
 
     getUsersFromAuth(data, axiosConfig) {
-        axios.post(usersApi, data, axiosConfig).then( (res) =>{
-            if(res.status === 200) {
+        axios.post(usersApi, data, axiosConfig).then((res) => {
+            if (res.status === 200) {
                 console.log(res.data)
                 this.handleApiResponse(res.data)
-            }
-            else
+            } else
                 alert("El usuario no tiene permisos")
         })
     }

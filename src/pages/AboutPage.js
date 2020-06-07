@@ -17,9 +17,9 @@ export default function AboutPage(){
             <div>
                 <h1 style={{color: 'white'}}>Bienvenido, {localStorage.getItem('user')}!</h1>
                 <Button onClick={() => {
-                        logOut(history);
-                    }
-                    }>Log Out</Button>
+                    logOut(history);
+                }
+                }>Log Out</Button>
             </div>
         )
     }

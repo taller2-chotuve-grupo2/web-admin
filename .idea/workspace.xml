@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Basic login with authserver">
+    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Users table implemented">
+      <change afterPath="$PROJECT_DIR$/src/styles/usersTable.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/AboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/UsersPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UsersPage.js" afterDir="false" />
     </list>
     <list id="eab6ce1b-ce0c-4389-8200-0bc73ac92d8e" name="Revert &quot;Pushed tik-tak-toe game&quot;" comment="Revert &quot;Pushed tik-tak-toe game&quot;&#10;&#10;This reverts commit 8414c5eb" />
@@ -36,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -184,7 +183,10 @@
       <workItem from="1591119210669" duration="1169000" />
       <workItem from="1591217377930" duration="691000" />
       <workItem from="1591311717911" duration="8105000" />
-      <workItem from="1591321693403" duration="3351000" />
+      <workItem from="1591321693403" duration="4127000" />
+      <workItem from="1591370186375" duration="54000" />
+      <workItem from="1591374988677" duration="3000" />
+      <workItem from="1591496167700" duration="4581000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1587389276953</created>
@@ -382,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590627722580</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Users table implemented">
+      <created>1591325744510</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1591325744510</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,14 +439,15 @@
     <MESSAGE value="Another fix routing" />
     <MESSAGE value="hashrouter usage" />
     <MESSAGE value="Basic login with authserver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic login with authserver" />
+    <MESSAGE value="Users table implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Users table implemented" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2774" y="451" key="#ESLint" timestamp="1591318693958">
+    <state x="2774" y="451" key="#ESLint" timestamp="1591500008518">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="854" y="464" key="#ESLint/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587610576181" />
-    <state x="2774" y="451" key="#ESLint/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1591318693958" />
+    <state x="2774" y="451" key="#ESLint/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1591500008518" />
     <state x="599" y="222" key="#Inspections" timestamp="1587446381473">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
@@ -565,11 +575,11 @@
     <state x="454" y="186" key="SettingsEditor/0.22.1920.1058@0.22.1920.1058" timestamp="1587387964279" />
     <state x="538" y="154" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587695554896" />
     <state x="2458" y="135" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1591312016037" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1590627726486">
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1591325746727">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587390352398" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1590627726486" />
+    <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1591325746727" />
     <state x="575" y="154" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591325089778">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
