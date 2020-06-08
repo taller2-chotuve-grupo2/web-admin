@@ -1,0 +1,30 @@
+.jsonTable{
+    border-radius: 25px;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background-color: orange;
+    border-collapse: collapse;
+}
+
+.jsonColumn{
+    background: black;
+    color: orange;
+    padding: 10px;
+    border-left:2px solid orange;
+    border-top:2px solid orange;
+    border-right:2px solid orange;
+}
+
+.jsonCell{
+    border-radius: 25px;
+    padding: 5px;
+}
+
+tr {
+    border: solid;
+    border-width: 1px 0;
+}
+table td + td { border-left:2px solid black; }
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Routes from './Routes'
+import Routes from './routes/Routes'
 
 
 document.body.style = 'background: black;';

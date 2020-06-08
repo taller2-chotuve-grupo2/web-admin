@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Button, Row, Container, Col, FormControl, InputGroup} from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useHistory } from 'react-router-dom';
-import chotuveLogo from './chotuve.png'
+import chotuveLogo from '../storage/chotuve.png'
 import axios from 'axios'
 
 const loginApi = 'https://chotuve-grupo2-auth-server-dev.herokuapp.com/login/';
@@ -109,7 +109,6 @@ class LoginRect extends React.Component {
                     </Col>
                 </Row>
                 <h1>
-                    {console.log(process.env.PUBLIC_URL) }
                 </h1>
             </Container>
         )
@@ -140,7 +139,6 @@ async function validate_credentials(user, password, history) {
     const res = await axios.post(loginApi, data, AxiosConfig)
     if (res.status === 200) {
         localStorage.setItem('user', user);
-        console.log(res.data['token'])
         localStorage.setItem('token', res.data['token'])
         history.push('/home');
     }else {
