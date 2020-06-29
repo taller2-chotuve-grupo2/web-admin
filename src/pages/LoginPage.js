@@ -129,14 +129,14 @@ async function validate_credentials(user, password, history) {
         password: password
     };
 
-    const AxiosConfig = {
+    const axiosConfig = {
         headers:{
             'Content-Type': 'application/json',
             'Authorization': 'Basic YWxhZGRpbjpvcGVuc2VzYW1l'
         }
     }
 
-    const res = await axios.post(loginApi, data, AxiosConfig)
+    const res = await axios.post(loginApi, data, axiosConfig)
     if (res.status === 200) {
         localStorage.setItem('user', user);
         localStorage.setItem('token', res.data['token'])

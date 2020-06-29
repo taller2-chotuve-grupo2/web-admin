@@ -41,6 +41,10 @@ export class HomeHeader extends React.Component {
         this.props.hst.push("/users");
     }
 
+    redirectToResources = () => {
+        this.props.hst.push("/resources");
+    }
+
     render() {
         return (
             <div>
@@ -57,6 +61,7 @@ export class HomeHeader extends React.Component {
                             <Nav className="mr-auto">
                                 <Button variant="dark" onClick={this.redirectHome}>Home</Button>
                                 <Button variant="dark" onClick={this.redirectToUsers}>Users</Button>
+                                <Button variant="dark" onClick={this.redirectToResources}>Media</Button>
                                 <Button variant="dark" onClick={this.redirectAbout}>Link</Button>
                             </Nav>
                         </Navbar.Collapse>
