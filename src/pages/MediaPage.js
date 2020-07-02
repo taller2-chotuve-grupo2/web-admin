@@ -13,7 +13,7 @@ import {withStyles} from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import RefreshIcon from '@material-ui/icons/Refresh';
 import {HomeHeader, HomeRect} from "./HomePage";
-import {Redirect, useHistory} from "react-router-dom";
+import {Redirect, useHistory, Link} from "react-router-dom";
 import FlatList, {PlainList} from 'flatlist-react'
 
 import JsonTable from "ts-react-json-table";
@@ -123,7 +123,7 @@ class MediaBody extends React.Component {
         const axiosConfig = {
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Basic YWxhZGRpbjpvcGVuc2VzYW1l'
+                'Authorization': localStorage.token
             }
         }
         this.getResources(axiosConfig)
@@ -133,7 +133,7 @@ class MediaBody extends React.Component {
     getResources(axiosConfig) {
         axios.get(mediaEndpoint, axiosConfig).then((res) => {
             if (res.status === 200) {
-                this.handleMediaResponse(res.data)
+                this.handleMediaResponse(res.data.result)
             } else
                 alert("El usuario no tiene permisos")
         })
@@ -155,7 +155,12 @@ class MediaList extends React.Component {
             <div key={idx} style={{width: "20%", display: "inline-block"}}>
                 <br/>
                 <div>
-                    <img src={resource.thumbnail} alt="Resource thumbnail" width="200" height="150"/>
+                    <Link to={{
+                        pathname: `/resources/${resource.id}`,
+                        resourceProps: resource
+                    }}>
+                        <img src={resource.thumbnail} alt="Resource thumbnail" width="200" height="150"/>
+                    </Link>
                     <h3 style={{
                         color: "#c6c6c6",
                         fontFamily: "    font-family: Roboto, Helvetica, Arial, sans-serif"

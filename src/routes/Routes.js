@@ -9,6 +9,7 @@ import * as login from '../pages/LoginPage'
 import HomePage from '../pages/HomePage'
 import UsersPage from '../pages/UsersPage'
 import MediaPage from '../pages/MediaPage'
+import MediaResourcePage from '../pages/MediaResourcePage'
 
 export default class Routes extends Component {
   render () {
@@ -26,6 +27,7 @@ export default class Routes extends Component {
               <Route path='/users'>
                 <UsersPage />
               </Route>
+              <Route name='resource' path='/resources/:id' component={MediaResourcePage} />
               <Route path='/resources'>
                 <MediaPage />
               </Route>

@@ -19,20 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Users table implemented">
-      <change afterPath="$PROJECT_DIR$/src/pages/MediaPage.js" afterDir="false" />
+    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Lint and media page">
+      <change afterPath="$PROJECT_DIR$/src/pages/MediaResourcePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/AboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/UsersPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UsersPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MediaPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MediaPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <list id="eab6ce1b-ce0c-4389-8200-0bc73ac92d8e" name="Revert &quot;Pushed tik-tak-toe game&quot;" comment="Revert &quot;Pushed tik-tak-toe game&quot;&#10;&#10;This reverts commit 8414c5eb" />
@@ -68,7 +61,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1590627821" />
+                    <option name="lastUsedInstant" value="1593404132" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -202,6 +195,12 @@
       <workItem from="1593390584502" duration="11983000" />
       <workItem from="1593403602683" duration="228000" />
       <workItem from="1593403860764" duration="184000" />
+      <workItem from="1593404095167" duration="80000" />
+      <workItem from="1593437753370" duration="467000" />
+      <workItem from="1593562521969" duration="1252000" />
+      <workItem from="1593565600133" duration="1518000" />
+      <workItem from="1593634018926" duration="634000" />
+      <workItem from="1593642217183" duration="16627000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1587389276953</created>
@@ -406,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591325744510</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Lint and media page">
+      <created>1593404146341</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1593404146341</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +461,8 @@
     <MESSAGE value="hashrouter usage" />
     <MESSAGE value="Basic login with authserver" />
     <MESSAGE value="Users table implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Users table implemented" />
+    <MESSAGE value="Lint and media page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lint and media page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2774" y="451" width="298" height="224" key="#ESLint" timestamp="1593403681566">
@@ -478,10 +485,11 @@
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
     <state x="682" y="344" width="565" height="392" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587687340331" />
-    <state x="851" y="227" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587912864971">
-      <screen x="0" y="22" width="1920" height="1058" />
+    <state x="2771" y="209" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593658376501">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="851" y="227" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587912864971" />
+    <state x="2771" y="209" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593658376501" />
     <state x="2554" y="238" key="#run" timestamp="1587563569268">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -593,34 +601,36 @@
     <state x="454" y="186" key="SettingsEditor/0.22.1920.1058@0.22.1920.1058" timestamp="1587387964279" />
     <state x="538" y="154" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587695554896" />
     <state x="2458" y="135" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1591312016037" />
-    <state x="560" y="287" key="Vcs.Push.Dialog.v2" timestamp="1591325746727">
-      <screen x="0" y="22" width="1920" height="1058" />
+    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1593404149736">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587390352398" />
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1591325746727" />
-    <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593385798566">
+    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593404149736" />
+    <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593657949958">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="575" y="154" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1591325089778" />
-    <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593385798566" />
+    <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593657949958" />
     <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587938876812">
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
     <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587389953665" />
     <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587938876812" />
     <state x="2665" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587563151169" />
-    <state x="2880" y="181" width="614" height="779" key="find.popup" timestamp="1593394097237">
+    <state x="2879" y="182" width="614" height="779" key="find.popup" timestamp="1593650932779">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1920" y="198" width="1228" height="762" key="find.popup/0.22.3840.1058@0.22.3840.1058" timestamp="1590354314495" />
     <state x="1920" y="203" width="1228" height="759" key="find.popup/0.27.3840.1053@0.27.3840.1053" timestamp="1593361425417" />
     <state x="851" y="198" width="614" height="762" key="find.popup/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587943345180" />
     <state x="2880" y="180" width="614" height="778" key="find.popup/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1591315072071" />
-    <state x="2880" y="181" width="614" height="779" key="find.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593394097237" />
-    <state x="624" y="247" key="run.anything.popup" timestamp="1587919992523">
-      <screen x="0" y="22" width="1920" height="1058" />
+    <state x="2879" y="182" width="614" height="779" key="find.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593650932779" />
+    <state x="2544" y="230" key="run.anything.popup" timestamp="1593651570984">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="624" y="247" key="run.anything.popup/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587919992523" />
+    <state x="2544" y="230" key="run.anything.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593651570984" />
     <state x="2543" y="222" width="672" height="678" key="search.everywhere.popup" timestamp="1590369157502">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -636,12 +646,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/routes/Routes.js</url>
-          <line>40</line>
+          <line>42</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/MediaPage.js</url>
-          <line>171</line>
+          <line>177</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

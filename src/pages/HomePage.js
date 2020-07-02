@@ -59,10 +59,10 @@ export class HomeHeader extends React.Component {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
-                                <Button variant="dark" onClick={this.redirectHome}>Home</Button>
-                                <Button variant="dark" onClick={this.redirectToUsers}>Users</Button>
-                                <Button variant="dark" onClick={this.redirectToResources}>Media</Button>
-                                <Button variant="dark" onClick={this.redirectAbout}>Link</Button>
+                                <Button variant="dark" key="navHome" onClick={this.redirectHome}>Home</Button>
+                                <Button variant="dark" key="navUsers" onClick={this.redirectToUsers}>Users</Button>
+                                <Button variant="dark" key="navMedia" onClick={this.redirectToResources}>Media</Button>
+                                <Button variant="dark" key="navLink" onClick={this.redirectAbout}>Link</Button>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
