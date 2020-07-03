@@ -17,7 +17,7 @@ const stringStyle = {
     fontFamily: "font-family: Roboto, Helvetica, Arial, sans-serif",
     margin: "0 auto",
     textAlign: "left",
-    width: "50%"
+    width: "50%",
 }
 
 const formTitle = {
@@ -92,14 +92,9 @@ class MediaResourceBody extends React.Component {
     }
 
     render() {
-        const stringStyle = {
-            color: "#c6c6c6",
-                fontFamily: "    font-family: Roboto, Helvetica, Arial, sans-serif"
-        }
         return (
             <div>
                 {console.log(this.state.resource)}
-                <h1  style={stringStyle}>{this.state.resource.title}</h1>
 
                 <div style={{display: "block",
                     margin: "0 auto"}}>
@@ -110,9 +105,9 @@ class MediaResourceBody extends React.Component {
                 <h1  style={stringStyle}>{this.state.resource.title}</h1>
                 <h5  style={stringStyle}>{this.state.resource.description}</h5>
                 <h6  style={stringStyle}>{this.state.resource.owner}</h6>
-                <div style={{display: "inline-block", marginLeft: "25"}}>
-                    <Button style={{marginLeft:"470px", marginTop: "10px"}} variant="contained" color="primary" onClick={this.showForm}> Edit </Button>
-                    <Button style={{marginLeft:"790px", marginTop: "10px"}} variant="contained" color="secondary" > Delete </Button>
+                <div style={{display: "inline-block", width: "100%", marginTop: "1%"}}>
+                    <Button style={{ marginLeft: "25%", width: "5%"}} variant="contained" color="primary" onClick={this.showForm}> Edit </Button>
+                    <Button style={{ marginLeft: "40%", width: "5%"}} variant="contained" color="secondary" > Delete </Button>
                 </div>
                 { this.state.showEditForm && (
                     <div>

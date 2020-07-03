@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Lint and media page">
+    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Media resource button page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MediaResourcePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MediaResourcePage.js" afterDir="false" />
     </list>
@@ -45,6 +45,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -407,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593404146341</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Media resource button page">
+      <created>1593745308560</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1593745308560</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +465,8 @@
     <MESSAGE value="Basic login with authserver" />
     <MESSAGE value="Users table implemented" />
     <MESSAGE value="Lint and media page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lint and media page" />
+    <MESSAGE value="Media resource button page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Media resource button page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2774" y="451" width="298" height="224" key="#ESLint" timestamp="1593403681566">
@@ -586,10 +595,15 @@
     </state>
     <state width="933" height="356" key="GridCell.Tab.3.right/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587699898574" />
     <state width="1899" height="356" key="GridCell.Tab.3.right/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1590368554827" />
-    <state x="192" y="93" key="MergeDialog" timestamp="1587609314482">
-      <screen x="0" y="22" width="1920" height="1058" />
+    <state x="2112" y="72" width="1536" height="901" key="MergeDialog" timestamp="1593745399682">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="192" y="93" key="MergeDialog/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587609314482" />
+    <state x="2112" y="72" width="1536" height="901" key="MergeDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593745399682" />
+    <state x="2511" y="316" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1593745399684">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2511" y="316" width="728" height="482" key="MultipleFileMergeDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593745399684" />
     <state x="2458" y="135" key="SettingsEditor" timestamp="1591312016037">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -607,12 +621,13 @@
     </state>
     <state x="575" y="154" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1591325089778" />
     <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593744187699" />
-    <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587938876812">
-      <screen x="0" y="22" width="1920" height="1058" />
+    <state x="2665" y="454" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593745317909">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587389953665" />
     <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587938876812" />
     <state x="2665" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587563151169" />
+    <state x="2665" y="454" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593745317909" />
     <state x="2879" y="182" width="614" height="779" key="find.popup" timestamp="1593743912142">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
