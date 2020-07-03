@@ -5,11 +5,12 @@ import { useHistory } from 'react-router-dom';
 import chotuveLogo from '../storage/chotuve.png'
 import axios from 'axios'
 
-const loginApi = 'https://chotuve-grupo2-auth-server-dev.herokuapp.com/login/';
+const baseUrl = process.env.REACT_APP_AUTH_BASE_URL
+const loginApi = `${baseUrl}/login/`;
 
 
 export function Login(){
-    const [usuario, setUsuario] = useState("");
+    const [usuario, setUsuario] = useState(""); 
     const [password, setPassword] = useState("");
     let history = useHistory();
         return ([

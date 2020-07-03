@@ -8674,7 +8674,7 @@ react-transition-group@^4.0.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@^16.13.1:
+react@^16.13.1, react@^16.8.6:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
@@ -10069,6 +10069,13 @@ ts-pnp@1.1.6, ts-pnp@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.6.tgz#389a24396d425a0d3162e96d2b4638900fdc289a"
   integrity sha512-CrG5GqAAzMT7144Cl+UIFP7mz/iIhiy+xQ6GGcnjTezhALT02uPMRw7tgDSESgB5MsfKt55+GPWw4ir1kVtMIQ==
+
+ts-react-json-table@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/ts-react-json-table/-/ts-react-json-table-0.1.2.tgz#f31008c8c31a1505b786603ffe8d01cbdf1f9f1d"
+  integrity sha512-R04BcrlQ8W0526Riq6HvdNRBgZgAMgQFUcpGXymM4PgC+YWW64gfnTKitS8fimOv+rEbxM0mwvaeohwoSfccHg==
+  dependencies:
+    react "^16.8.6"
 
 tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.11.1"
