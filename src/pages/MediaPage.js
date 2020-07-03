@@ -19,8 +19,8 @@ import FlatList, {PlainList} from 'flatlist-react'
 import JsonTable from "ts-react-json-table";
 import axios from "axios";
 
-const mediaEndpoint = 'https://media-server-staging-fiuba.herokuapp.com/resource/'
-
+const baseUrl = process.env.REACT_APP_MEDIA_BASE_URL
+const mediaEndpoint = `${baseUrl}/resource/`;
 
 function MediaPage() {
     let history = useHistory();

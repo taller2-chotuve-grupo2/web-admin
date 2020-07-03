@@ -7,7 +7,8 @@ import JsonTable from 'ts-react-json-table'
 import axios from 'axios'
 import styles from '../styles/usersTable.css'
 
-const usersApi = 'https://chotuve-grupo2-auth-server-dev.herokuapp.com/users'
+const baseUrl = process.env.REACT_APP_AUTH_BASE_URL
+const usersApi = `${baseUrl}/users/`;
 
 export default function UsersPage () {
   const history = useHistory()

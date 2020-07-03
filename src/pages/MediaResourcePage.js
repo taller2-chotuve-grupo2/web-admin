@@ -6,7 +6,8 @@ import { Redirect, useHistory } from 'react-router-dom'
 import {HomeHeader, HomeRect} from "./HomePage";
 import axios from "axios";
 
-const mediaEndpoint = 'https://media-server-staging-fiuba.herokuapp.com/resource/'
+const baseUrl = process.env.REACT_APP_MEDIA_BASE_URL
+const mediaEndpoint = `${baseUrl}/resource/`;
 
 
 export default function MediaResourcePage (props) {
