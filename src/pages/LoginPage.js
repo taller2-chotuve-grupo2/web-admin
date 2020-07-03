@@ -149,5 +149,4 @@ async function validate_credentials(user, password, history) {
     catch(e) {
         alert("Usuario o contraseña invalidos!")
     }
-
 }
