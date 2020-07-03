@@ -1,9 +1,7 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
 //import { useHistory } from 'react-router-dom';
 import {Button, Row, Container, Navbar, Nav } from "react-bootstrap";
 import chotuveLogo from "../storage/chotuve.png";
-import "../index.css";
 import { Redirect, useHistory } from 'react-router-dom';
 
 

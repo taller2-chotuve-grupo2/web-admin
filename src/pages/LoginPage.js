@@ -136,13 +136,17 @@ async function validate_credentials(user, password, history) {
             'Authorization': 'Basic YWxhZGRpbjpvcGVuc2VzYW1l'
         }
     }
-
-    const res = await axios.post(loginApi, data, axiosConfig)
-    if (res.status === 200) {
-        localStorage.setItem('user', user);
-        localStorage.setItem('token', res.data['token'])
-        history.push('/home');
-    }else {
+    try {
+        const res = await axios.post(loginApi, data, axiosConfig)
+        if (res.status === 200) {
+            localStorage.setItem('user', user);
+            localStorage.setItem('token', res.data['token'])
+            history.push('/home');
+        }else {
+            alert("Usuario o contraseña invalidos!")
+        }
+    }
+    catch(e) {
         alert("Usuario o contraseña invalidos!")
     }
 
