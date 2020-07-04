@@ -45,10 +45,6 @@ class UsersBody extends React.Component {
   }
 
   componentDidMount () {
-    const data = {
-      token: localStorage.getItem('token')
-    }
-
     const axiosConfig = {
       headers: {
         'Authorization': localStorage.getItem('token'),
