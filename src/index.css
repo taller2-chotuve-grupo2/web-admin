@@ -27,3 +27,12 @@ body {
   margin-right:5px;
   background-image: linear-gradient(to bottom, black, black 100%) !important; /* override background image gradient w/ flat color */
 }
+
+
+.logout-btn{
+  margin-left:auto;
+}
+
+.inner-nav{
+  width:100%;
+}

@@ -4,18 +4,27 @@
   "private": true,
   "homepage": "https://taller2-chotuve-grupo2.github.io/web-admin/",
   "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/react": "^10.0.3",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "cra-template": "1.0.3",
+    "flatlist-react": "^1.4.2",
+    "material-ui": "^0.20.2",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
+    "standard": "^14.3.4",
     "ts-react-json-table": "^0.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

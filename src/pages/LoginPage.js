@@ -5,11 +5,12 @@ import { useHistory } from 'react-router-dom';
 import chotuveLogo from '../storage/chotuve.png'
 import axios from 'axios'
 
-const loginApi = 'https://chotuve-grupo2-auth-server-dev.herokuapp.com/login/';
+const baseUrl = process.env.REACT_APP_AUTH_BASE_URL
+const loginApi = `${baseUrl}/login/`;
 
 
 export function Login(){
-    const [usuario, setUsuario] = useState("");
+    const [usuario, setUsuario] = useState(""); 
     const [password, setPassword] = useState("");
     let history = useHistory();
         return ([
@@ -129,20 +130,23 @@ async function validate_credentials(user, password, history) {
         password: password
     };
 
-    const AxiosConfig = {
+    const axiosConfig = {
         headers:{
             'Content-Type': 'application/json',
             'Authorization': 'Basic YWxhZGRpbjpvcGVuc2VzYW1l'
         }
     }
-
-    const res = await axios.post(loginApi, data, AxiosConfig)
-    if (res.status === 200) {
-        localStorage.setItem('user', user);
-        localStorage.setItem('token', res.data['token'])
-        history.push('/home');
-    }else {
+    try {
+        const res = await axios.post(loginApi, data, axiosConfig)
+        if (res.status === 200) {
+            localStorage.setItem('user', user);
+            localStorage.setItem('token', res.data['token'])
+            history.push('/home');
+        }else {
+            alert("Usuario o contraseña invalidos!")
+        }
+    }
+    catch(e) {
         alert("Usuario o contraseña invalidos!")
     }
-
 }
