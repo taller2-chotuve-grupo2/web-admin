@@ -14,9 +14,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import RefreshIcon from '@material-ui/icons/Refresh';
 import {HomeHeader, HomeRect} from "./HomePage";
 import {Redirect, useHistory, Link} from "react-router-dom";
-import FlatList, {PlainList} from 'flatlist-react'
-
-import JsonTable from "ts-react-json-table";
+import  {PlainList} from 'flatlist-react'
 import axios from "axios";
 
 const baseUrl = process.env.REACT_APP_MEDIA_BASE_URL

@@ -2,12 +2,10 @@ import React from 'react'
 import '../index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Redirect, useHistory } from 'react-router-dom'
-import {Button, TextField, FormControl} from "@material-ui/core";
+import {Button, TextField} from "@material-ui/core";
 import {HomeHeader, HomeRect} from "./HomePage";
 import axios from "axios";
-import { makeStyles } from '@material-ui/core/styles';
 import Select from 'react-select'
-import {Dropdown} from "react-bootstrap";
 
 const baseUrl = process.env.REACT_APP_MEDIA_BASE_URL
 const mediaEndpoint = `${baseUrl}/resource/`;
