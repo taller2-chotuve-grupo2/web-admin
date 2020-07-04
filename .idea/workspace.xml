@@ -16,10 +16,16 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Media resource button page">
+    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Buttons setupiados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MediaResourcePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MediaResourcePage.js" afterDir="false" />
     </list>
@@ -197,6 +203,7 @@
       <workItem from="1593565600133" duration="1518000" />
       <workItem from="1593634018926" duration="634000" />
       <workItem from="1593642217183" duration="16627000" />
+      <workItem from="1593873871756" duration="1642000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1587389276953</created>
@@ -415,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593745308560</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Buttons setupiados">
+      <created>1593746631801</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1593746631801</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,6 +441,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_WIDTH">
                 <map>
                   <entry key="2" value="178" />
@@ -441,7 +466,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".travis.yml" />
     <MESSAGE value=".travis.yml without coverage" />
     <MESSAGE value=".travis.yml with coverage" />
     <MESSAGE value=".travis.yml with coverage trying" />
@@ -466,7 +490,8 @@
     <MESSAGE value="Users table implemented" />
     <MESSAGE value="Lint and media page" />
     <MESSAGE value="Media resource button page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Media resource button page" />
+    <MESSAGE value="Buttons setupiados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Buttons setupiados" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2774" y="451" width="298" height="224" key="#ESLint" timestamp="1593403681566">
@@ -610,17 +635,17 @@
     <state x="454" y="186" key="SettingsEditor/0.22.1920.1058@0.22.1920.1058" timestamp="1587387964279" />
     <state x="538" y="154" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587695554896" />
     <state x="2458" y="135" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1591312016037" />
-    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1593404149736">
+    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1593746635040">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587390352398" />
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1591325746727" />
-    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593404149736" />
-    <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593744187699">
+    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593746635040" />
+    <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593874789910">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="575" y="154" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1591325089778" />
-    <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593744187699" />
+    <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593874789910" />
     <state x="2665" y="454" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593745317909">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

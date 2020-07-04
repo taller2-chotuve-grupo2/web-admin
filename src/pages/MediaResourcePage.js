@@ -10,6 +10,12 @@ import axios from "axios";
 
 const baseUrl = process.env.REACT_APP_MEDIA_BASE_URL
 const mediaEndpoint = `${baseUrl}/resource/`;
+const axiosConfig = {
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': localStorage.token
+    }
+}
 
 
 const stringStyle = {
@@ -44,7 +50,7 @@ export default function MediaResourcePage (props) {
         return [
             <HomeHeader hst={history} />,
             <HomeRect />,
-            <MediaResourceBody id={props.match.params.id} />
+            <MediaResourceBody id={props.match.params.id} hst={history}/>
         ]
     }
 }
@@ -56,28 +62,24 @@ class MediaResourceBody extends React.Component {
         this.state = {
             resource: {},
             id: props.id,
-            showEditForm: false
+            showEditForm: false,
+            hst: null
         }
         this.handleResourceResponse = this.handleResourceResponse.bind(this)
         this.showForm = this.showForm.bind(this)
+        this.handleDeleteButton = this.handleDeleteButton.bind(this)
     }
     handleResourceResponse(data) {
         this.setState({resource: data})
     }
 
     componentDidMount() {
-        const axiosConfig = {
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': localStorage.token
-            }
-        }
-        this.getResource(axiosConfig)
+        this.getResource()
     }
 
 
 
-    getResource(axiosConfig) {
+    getResource() {
         const resourceEndpoint = mediaEndpoint + this.state.id
         axios.get(resourceEndpoint, axiosConfig).then((res) => {
             if (res.status === 200) {
@@ -91,6 +93,16 @@ class MediaResourceBody extends React.Component {
         this.setState({showEditForm : true})
     }
 
+    handleDeleteButton(){
+        axios.delete(mediaEndpoint + this.state.id, axiosConfig).then((res) =>{
+            console.log('asd')
+            if (res.status === 200) {
+                console.log('delete okkk')
+                this.props.hst.push("/resources");
+            } else
+                alert("El usuario no tiene permisos")
+        })
+    }
     render() {
         return (
             <div>
@@ -107,7 +119,7 @@ class MediaResourceBody extends React.Component {
                 <h6  style={stringStyle}>{this.state.resource.owner}</h6>
                 <div style={{display: "inline-block", width: "100%", marginTop: "1%"}}>
                     <Button style={{ marginLeft: "25%", width: "5%"}} variant="contained" color="primary" onClick={this.showForm}> Edit </Button>
-                    <Button style={{ marginLeft: "40%", width: "5%"}} variant="contained" color="secondary" > Delete </Button>
+                    <Button style={{ marginLeft: "40%", width: "5%"}} variant="contained" color="secondary" onClick={this.handleDeleteButton}> Delete </Button>
                 </div>
                 { this.state.showEditForm && (
                     <div>
