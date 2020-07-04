@@ -25,12 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Delete Working">
+    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Edit button implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MediaResourcePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MediaResourcePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/UsersPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UsersPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <list id="eab6ce1b-ce0c-4389-8200-0bc73ac92d8e" name="Revert &quot;Pushed tik-tak-toe game&quot;" comment="Revert &quot;Pushed tik-tak-toe game&quot;&#10;&#10;This reverts commit 8414c5eb" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +204,7 @@
       <workItem from="1593634018926" duration="634000" />
       <workItem from="1593642217183" duration="16627000" />
       <workItem from="1593873871756" duration="9457000" />
-      <workItem from="1593884404543" duration="4579000" />
+      <workItem from="1593884404543" duration="4804000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1587389276953</created>
@@ -440,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593875526608</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Edit button implemented">
+      <created>1593889620860</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1593889620860</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +481,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".travis.yml with coverage" />
     <MESSAGE value=".travis.yml with coverage trying" />
     <MESSAGE value=".travisyml with coverage trying" />
     <MESSAGE value=".travisyml with coverage uncommented" />
@@ -502,7 +505,8 @@
     <MESSAGE value="Media resource button page" />
     <MESSAGE value="Buttons setupiados" />
     <MESSAGE value="Delete Working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete Working" />
+    <MESSAGE value="Edit button implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit button implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2774" y="451" width="298" height="224" key="#ESLint" timestamp="1593403681566">
@@ -646,12 +650,12 @@
     <state x="454" y="186" key="SettingsEditor/0.22.1920.1058@0.22.1920.1058" timestamp="1587387964279" />
     <state x="538" y="154" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587695554896" />
     <state x="2458" y="135" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1591312016037" />
-    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1593875528861">
+    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1593889622538">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587390352398" />
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1591325746727" />
-    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593875528861" />
+    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593889622538" />
     <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593874789910">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

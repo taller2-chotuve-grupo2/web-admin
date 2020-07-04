@@ -30,7 +30,7 @@ class UsersBody extends React.Component {
       usersData: [],
       columns: [
         { key: 'username', label: 'Username' },
-        { key: 'password', label: 'Password' },
+        { key: 'password', label: 'Encripted Password' },
         { key: 'email', label: 'Email' },
         { key: 'createdAt', label: 'Creation Date' },
         { key: 'updatedAt', label: 'Last Update' }
@@ -51,10 +51,11 @@ class UsersBody extends React.Component {
 
     const axiosConfig = {
       headers: {
+        'Authorization': localStorage.getItem('token'),
         'Content-Type': 'application/json'
       }
     }
-    this.getUsersFromAuth(data, axiosConfig)
+    this.getUsersFromAuth(axiosConfig)
   }
 
   render () {
@@ -64,10 +65,10 @@ class UsersBody extends React.Component {
            />
   }
 
-  getUsersFromAuth (data, axiosConfig) {
-    axios.post(usersApi, data, axiosConfig).then((res) => {
+  getUsersFromAuth (axiosConfig) {
+    axios.get(usersApi, axiosConfig).then((res) => {
       if (res.status === 200) {
-        this.handleApiResponse(res.data)
+        this.handleApiResponse(res.data.result)
       } else { alert('El usuario no tiene permisos') }
     })
   }
