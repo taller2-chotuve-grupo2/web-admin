@@ -25,9 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Buttons setupiados">
+    <list default="true" id="2a7b7271-5d1c-4fbc-be69-829612e96c81" name="Default Changelist" comment="Delete Working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MediaResourcePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MediaResourcePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/UsersPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/UsersPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <list id="eab6ce1b-ce0c-4389-8200-0bc73ac92d8e" name="Revert &quot;Pushed tik-tak-toe game&quot;" comment="Revert &quot;Pushed tik-tak-toe game&quot;&#10;&#10;This reverts commit 8414c5eb" />
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +206,8 @@
       <workItem from="1593565600133" duration="1518000" />
       <workItem from="1593634018926" duration="634000" />
       <workItem from="1593642217183" duration="16627000" />
-      <workItem from="1593873871756" duration="1642000" />
+      <workItem from="1593873871756" duration="9457000" />
+      <workItem from="1593884404543" duration="4579000" />
     </task>
     <task id="LOCAL-00001" summary=".travis.yml">
       <created>1587389276953</created>
@@ -429,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593746631801</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Delete Working">
+      <created>1593875526608</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1593875526608</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +477,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=".travis.yml without coverage" />
     <MESSAGE value=".travis.yml with coverage" />
     <MESSAGE value=".travis.yml with coverage trying" />
     <MESSAGE value=".travisyml with coverage trying" />
@@ -491,7 +501,8 @@
     <MESSAGE value="Lint and media page" />
     <MESSAGE value="Media resource button page" />
     <MESSAGE value="Buttons setupiados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Buttons setupiados" />
+    <MESSAGE value="Delete Working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete Working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2774" y="451" width="298" height="224" key="#ESLint" timestamp="1593403681566">
@@ -531,11 +542,11 @@
       <screen x="0" y="22" width="1920" height="1058" />
     </state>
     <state x="192" y="104" key="DiffContextDialog/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587443967545" />
-    <state x="2722" y="237" width="424" height="491" key="FileChooserDialogImpl" timestamp="1593403825566">
+    <state x="2722" y="237" width="424" height="491" key="FileChooserDialogImpl" timestamp="1593882655574">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="802" y="254" key="FileChooserDialogImpl/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587915977485" />
-    <state x="2722" y="237" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593403825566" />
+    <state x="2722" y="237" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593882655574" />
     <state width="1899" height="265" key="GridCell.Tab.0.bottom" timestamp="1590369158596">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -635,12 +646,12 @@
     <state x="454" y="186" key="SettingsEditor/0.22.1920.1058@0.22.1920.1058" timestamp="1587387964279" />
     <state x="538" y="154" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587695554896" />
     <state x="2458" y="135" key="SettingsEditor/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1591312016037" />
-    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1593746635040">
+    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1593875528861">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/0.22.1920.1058@0.22.1920.1058" timestamp="1587390352398" />
     <state x="560" y="287" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1591325746727" />
-    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593746635040" />
+    <state x="2480" y="271" width="800" height="563" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593875528861" />
     <state x="2495" y="135" width="570" height="686" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593874789910">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -653,19 +664,19 @@
     <state x="745" y="467" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587938876812" />
     <state x="2665" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1587563151169" />
     <state x="2665" y="454" width="458" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593745317909" />
-    <state x="2879" y="182" width="614" height="779" key="find.popup" timestamp="1593743912142">
+    <state x="2879" y="182" width="614" height="779" key="find.popup" timestamp="1593888090519">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1920" y="198" width="1228" height="762" key="find.popup/0.22.3840.1058@0.22.3840.1058" timestamp="1590354314495" />
     <state x="1920" y="203" width="1228" height="759" key="find.popup/0.27.3840.1053@0.27.3840.1053" timestamp="1593361425417" />
     <state x="851" y="198" width="614" height="762" key="find.popup/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587943345180" />
     <state x="2880" y="180" width="614" height="778" key="find.popup/1920.0.1920.1080/0.22.1920.1058@1920.0.1920.1080" timestamp="1591315072071" />
-    <state x="2879" y="182" width="614" height="779" key="find.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593743912142" />
-    <state x="2544" y="230" key="run.anything.popup" timestamp="1593651570984">
+    <state x="2879" y="182" width="614" height="779" key="find.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593888090519" />
+    <state x="2544" y="230" key="run.anything.popup" timestamp="1593877121318">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="624" y="247" key="run.anything.popup/1920.0.1920.1080/0.22.1920.1058@0.22.1920.1058" timestamp="1587919992523" />
-    <state x="2544" y="230" key="run.anything.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593651570984" />
+    <state x="2544" y="230" key="run.anything.popup/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1593877121318" />
     <state x="2543" y="222" width="672" height="678" key="search.everywhere.popup" timestamp="1590369157502">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

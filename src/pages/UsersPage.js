@@ -41,7 +41,6 @@ class UsersBody extends React.Component {
   }
 
   handleApiResponse (users) {
-    console.log(users)
     this.setState({ usersData: users })
   }
 
@@ -59,7 +58,6 @@ class UsersBody extends React.Component {
   }
 
   render () {
-    console.log(this.state.usersData)
     return <JsonTable
       rows={this.state.usersData} columns={this.state.columns} class={styles}
       settings={{ noRowsMessage: 'Loading or no permissions' }}
@@ -69,7 +67,6 @@ class UsersBody extends React.Component {
   getUsersFromAuth (data, axiosConfig) {
     axios.post(usersApi, data, axiosConfig).then((res) => {
       if (res.status === 200) {
-        console.log(res.data)
         this.handleApiResponse(res.data)
       } else { alert('El usuario no tiene permisos') }
     })

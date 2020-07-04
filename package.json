@@ -17,6 +17,7 @@
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
     "standard": "^14.3.4",
     "ts-react-json-table": "^0.1.2"
   },
