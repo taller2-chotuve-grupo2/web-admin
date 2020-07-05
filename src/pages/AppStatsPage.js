@@ -70,7 +70,7 @@ class AppTable extends React.Component {
 
   handleAppResponse (status) {
     const data = [{
-      name: 'App server', url: appEndpoint, status
+      name: 'App server', url: baseUrl, status
     }]
     this.setState({ appData: data })
   }
