@@ -9,6 +9,7 @@ import * as login from '../pages/LoginPage'
 import HomePage from '../pages/HomePage'
 import UsersPage from '../pages/UsersPage'
 import MediaPage from '../pages/MediaPage'
+import AppStatsPage from '../pages/AppStatsPage'
 import MediaResourcePage from '../pages/MediaResourcePage'
 
 export default class Routes extends Component {
@@ -30,6 +31,9 @@ export default class Routes extends Component {
               <Route name='resource' path='/resources/:id' component={MediaResourcePage} />
               <Route path='/resources'>
                 <MediaPage />
+              </Route>
+              <Route path='/app-stats'>
+                <AppStatsPage />
               </Route>
               <Route path='/'>
                 <login.Login />
