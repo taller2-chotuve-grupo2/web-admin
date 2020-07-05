@@ -3,7 +3,7 @@ import '../index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Redirect, useHistory } from 'react-router-dom'
 import { HomeHeader, HomeRect } from './HomePage'
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles, withStyles } from '@material-ui/core/styles'
 import Table from '@material-ui/core/Table'
 import TableBody from '@material-ui/core/TableBody'
 import TableCell from '@material-ui/core/TableCell'
@@ -16,7 +16,7 @@ import axios from 'axios'
 const baseUrl = process.env.REACT_APP_APP_BASE_URL
 const appEndpoint = `${baseUrl}/ping/`
 
-export default function AboutPage () {
+function AppStatsPage () {
   const history = useHistory()
   if (!localStorage.getItem('user')) {
     return <Redirect to='/login' />
@@ -27,71 +27,83 @@ export default function AboutPage () {
 
       <HomeHeader hst={history} />,
       <HomeRect />,
-      // <Content classes={styles} />,
-      <SimpleTable />
+      <AppTable />
 
     ]
   )
 }
 
-const useStyles = makeStyles({
-  table: {
-    minWidth: 650
-  }
-})
+class AppTable extends React.Component {
+  constructor () {
+    super()
+    this.state = {
+      appData: []
+    }
 
-function createData (name, url) {
-  const axiosConfig = {
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: localStorage.token
-    }
+    this.handleAppResponse = this.handleAppResponse.bind(this)
   }
-  let status
-  axios.get(appEndpoint, axiosConfig).then((res) => {
-    if (res.status === 200) {
-      status = 'OK'
-    } else {
-      status = 'ERROR'
+
+  componentDidMount () {
+    const axiosConfig = {
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: localStorage.token
+      }
     }
-  })
-  return { name, url, status }
+    this.getResources(axiosConfig)
+  }
+
+  getResources (axiosConfig) {
+    let status
+    axios.get(appEndpoint, axiosConfig).then((res) => {
+      if (res.status === 200) {
+        status = 'OK'
+      } else {
+        status = 'ERROR'
+      }
+      this.handleAppResponse(status)
+    })
+  }
+
+  render () {
+    return <SimpleTable data={this.state.appData} />
+  }
+
+  handleAppResponse (status) {
+    const data = [{
+      name: 'App server', url: appEndpoint, status
+    }]
+    this.setState({ appData: data })
+  }
 }
 
-const rows = [
-  createData('App server', appEndpoint)
-]
-
-function SimpleTable () {
-  const classes = useStyles()
-
-  return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label='simple table'>
-        <TableHead>
-          <TableRow>
-            <TableCell>Server Name</TableCell>
-            <TableCell>Url</TableCell>
-            <TableCell>Status</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.name}>
-              <TableCell>
-                {row.name}
-              </TableCell>
-              <TableCell>{row.url}</TableCell>
-              <TableCell>{row.status}</TableCell>
+class SimpleTable extends React.Component {
+  render () {
+    return (
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>Server Name</TableCell>
+              <TableCell>Url</TableCell>
+              <TableCell>Status</TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
-  )
+          </TableHead>
+          <TableBody>
+            {this.props.data.map((row) => (
+              <TableRow key={row.name}>
+                <TableCell>
+                  {row.name}
+                </TableCell>
+                <TableCell>{row.url}</TableCell>
+                <TableCell>{row.status}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    )
+  }
 }
 
-function logOut (history) {
-  localStorage.removeItem('user')
-  history.push('/')
-}
+export default (AppStatsPage)
