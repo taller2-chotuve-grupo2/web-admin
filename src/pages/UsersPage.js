@@ -101,7 +101,7 @@ class UsersBody extends React.Component {
           columns={[
             { 
               field: 'thumbnail', 
-              title: 'thumbnail', 
+              title: 'Avatar', 
               render: rowData => <Avatar alt="Remy Sharp" src={rowData.thumbnail} />
             },
             { field: 'username', title: 'Username' },
@@ -116,6 +116,16 @@ class UsersBody extends React.Component {
             // { title: 'Doğum Yılı', field: 'birthYear', type: 'numeric' },
           ]}
           data={this.state.usersData}
+          options={{
+            headerStyle: {
+              backgroundColor: 'orange',
+              color: 'black'
+            },
+            rowStyle: {
+              backgroundColor: 'black',
+              color: 'orange'
+            }
+          }}
           title='Users'
         />
       </div>
