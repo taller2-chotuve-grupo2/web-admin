@@ -43,6 +43,10 @@ export class HomeHeader extends React.Component {
         this.props.hst.push("/resources");
     }
 
+    redirectToAppStats = () => {
+        this.props.hst.push("/app-stats");
+    }
+
     logOut = ()  => {
         localStorage.removeItem('user')
         this.props.hst.push("/resources");
@@ -66,6 +70,7 @@ export class HomeHeader extends React.Component {
                                 <Button variant="dark" key="navHome" onClick={this.redirectHome}>Home</Button>
                                 <Button variant="dark" key="navUsers" onClick={this.redirectToUsers}>Users</Button>
                                 <Button variant="dark" key="navMedia" onClick={this.redirectToResources}>Media</Button>
+                                <Button variant="dark" key="navAppStats" onClick={this.redirectToAppStats}>AppStats</Button>
                                 <Button variant="dark" key="navLink" onClick={this.redirectAbout}>Link</Button>
                                 <Button variant="dark" className="logout-btn" key="navLink" onClick={this.logOut}>Logout</Button>
                             </Nav>
