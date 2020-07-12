@@ -72,7 +72,7 @@ export class HomeHeader extends React.Component {
                                 <Button variant="dark" key="navMedia" onClick={this.redirectToResources}>Media</Button>
                                 <Button variant="dark" key="navAppStats" onClick={this.redirectToAppStats}>AppStats</Button>
                                 <Button variant="dark" key="navLink" onClick={this.redirectAbout}>Link</Button>
-                                <Button variant="dark" className="logout-btn" key="navLink" onClick={this.logOut}>Logout</Button>
+                                <Button variant="dark" className="logout-btn" key="navLogout" onClick={this.logOut}>Logout</Button>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>

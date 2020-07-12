@@ -1,6 +1,4 @@
-import  React from 'react'
-import { forwardRef } from 'react'
-
+import React from 'react'
 import '../index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Redirect, useHistory } from 'react-router-dom'
@@ -25,6 +23,7 @@ import Remove from '@material-ui/icons/Remove'
 import SaveAlt from '@material-ui/icons/SaveAlt'
 import Search from '@material-ui/icons/Search'
 import ViewColumn from '@material-ui/icons/ViewColumn'
+const { forwardRef } = React
 
 const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
@@ -47,7 +46,15 @@ const tableIcons = {
 }
 
 const baseUrl = process.env.REACT_APP_AUTH_BASE_URL
-const usersApi = `${baseUrl}/users/`
+const getUsersApi = `${baseUrl}/users/`
+const postUsersApi = `${baseUrl}/user/`
+
+const axiosConfig = {
+  headers: {
+    Authorization: localStorage.getItem('token'),
+    'Content-Type': 'application/json'
+  }
+}
 
 export default function UsersPage () {
   const history = useHistory()
@@ -66,14 +73,7 @@ class UsersBody extends React.Component {
   constructor () {
     super()
     this.state = {
-      usersData: [],
-      columns: [
-        { key: 'username', label: 'Username' },
-        { key: 'password', label: 'Encripted Password' },
-        { key: 'email', label: 'Email' },
-        { key: 'createdAt', label: 'Creation Date' },
-        { key: 'updatedAt', label: 'Last Update' }
-      ]
+      usersData: []
     }
 
     this.handleApiResponse = this.handleApiResponse.bind(this)
@@ -84,13 +84,7 @@ class UsersBody extends React.Component {
   }
 
   componentDidMount () {
-    const axiosConfig = {
-      headers: {
-        Authorization: localStorage.getItem('token'),
-        'Content-Type': 'application/json'
-      }
-    }
-    this.getUsersFromAuth(axiosConfig)
+    this.getUsersFromAuth()
   }
 
   render () {
@@ -99,21 +93,21 @@ class UsersBody extends React.Component {
         <MaterialTable
           icons={tableIcons}
           columns={[
-            { 
-              field: 'thumbnail', 
-              title: 'Avatar', 
-              render: rowData => <Avatar alt="Remy Sharp" src={rowData.thumbnail} />
+            {
+              field: 'thumbnail',
+              title: 'Avatar',
+              render: rowData => <Avatar alt='Remy Sharp' src={rowData.thumbnail} />
             },
             { field: 'username', title: 'Username' },
             { field: 'password', title: 'Encripted Password' },
             { field: 'email', title: 'Email' },
             { field: 'first_name', title: 'first_name' },
             { field: 'last_name', title: 'last_name' },
+            { field: 'idRol', title: 'roleId' },
             { field: 'phone', title: 'phone' },
             { field: 'createdAt', title: 'Creation Date' },
             { field: 'updatedAt', title: 'Last Update' }
 
-            // { title: 'Doğum Yılı', field: 'birthYear', type: 'numeric' },
           ]}
           data={this.state.usersData}
           options={{
@@ -127,20 +121,57 @@ class UsersBody extends React.Component {
             }
           }}
           title='Users'
+          editable={{
+            onRowAdd: newData =>
+              new Promise((resolve, reject) => {
+                setTimeout(() => {
+                  this.postNewUser(newData).then(() => {
+                    // this.get
+                    this.getUsersFromAuth()
+                    resolve()
+                    // this.setState({ usersData: [...data, newData] })
+                  })
+                }, 1000)
+              })
+            // onRowUpdate: (newData, oldData) =>
+            //   new Promise((resolve, reject) => {
+            //     setTimeout(() => {
+            //       const dataUpdate = [...data]
+            //       const index = oldData.tableData.id
+            //       dataUpdate[index] = newData
+            //       setData([...dataUpdate])
+
+            //       resolve()
+            //     }, 1000)
+            //   }),
+            // onRowDelete: oldData =>
+            //   new Promise((resolve, reject) => {
+            //     setTimeout(() => {
+            //       const dataDelete = [...data]
+            //       const index = oldData.tableData.id
+            //       dataDelete.splice(index, 1)
+            //       setData([...dataDelete])
+
+            //       resolve()
+            //     }, 1000)
+            //   })
+          }}
         />
       </div>
-      // <JsonTable
-      //   rows={this.state.usersData} columns={this.state.columns} class={styles}
-      //   settings={{ noRowsMessage: 'Loading or no permissions' }}
-      //        />
     )
   }
 
-  getUsersFromAuth (axiosConfig) {
-    axios.get(usersApi, axiosConfig).then((res) => {
+  getUsersFromAuth () {
+    axios.get(getUsersApi, axiosConfig).then((res) => {
       if (res.status === 200) {
         this.handleApiResponse(res.data.result)
-      } else { alert('El usuario no tiene permisos') }
+      } else {
+        alert('El usuario no tiene permisos')
+      }
     })
+  }
+
+  postNewUser (userData) {
+    return axios.post(postUsersApi, userData, axiosConfig)
   }
 }
