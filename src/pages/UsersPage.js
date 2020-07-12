@@ -31,7 +31,7 @@ const tableIcons = {
   Clear: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
   Delete: forwardRef((props, ref) => <DeleteOutline {...props} ref={ref} style={{ color: 'white' }} />),
   DetailPanel: forwardRef((props, ref) => <ChevronRight {...props} ref={ref} />),
-  Edit: forwardRef((props, ref) => <Edit {...props} ref={ref} />),
+  Edit: forwardRef((props, ref) => <Edit {...props} ref={ref} style={{ color: 'white' }} />),
   Export: forwardRef((props, ref) => <SaveAlt {...props} ref={ref} />),
   Filter: forwardRef((props, ref) => <FilterList {...props} ref={ref} />),
   FirstPage: forwardRef((props, ref) => <FirstPage {...props} ref={ref} />),
@@ -46,9 +46,10 @@ const tableIcons = {
 }
 
 const baseUrl = process.env.REACT_APP_AUTH_BASE_URL
-const getUsersApi = `${baseUrl}/users/`
+const getUsersApi = `${baseUrl}/users?pageSize=100`
 const postUsersApi = `${baseUrl}/user/`
 const deleteUsersApi = (id) => `${baseUrl}/user/${id}`
+const putUsersApi = (id) => `${baseUrl}/user/${id}`
 
 const axiosConfig = {
   headers: {
@@ -132,17 +133,15 @@ class UsersBody extends React.Component {
                   })
                 }, 1000)
               }),
-            // onRowUpdate: (newData, oldData) =>
-            //   new Promise((resolve, reject) => {
-            //     setTimeout(() => {
-            //       const dataUpdate = [...data]
-            //       const index = oldData.tableData.id
-            //       dataUpdate[index] = newData
-            //       setData([...dataUpdate])
-
-            //       resolve()
-            //     }, 1000)
-            //   }),
+            onRowUpdate: (newData, oldData) =>
+              new Promise((resolve, reject) => {
+                setTimeout(() => {
+                  this.putUser(newData).then(() => {
+                    this.getUsersFromAuth()
+                    resolve()
+                  })
+                }, 1000)
+              }),
             onRowDelete: oldData =>
               new Promise((resolve, reject) => {
                 setTimeout(() => {
@@ -170,6 +169,10 @@ class UsersBody extends React.Component {
 
   postNewUser (userData) {
     return axios.post(postUsersApi, userData, axiosConfig)
+  }
+
+  putUser (userData) {
+    return axios.put(putUsersApi(userData.username), userData, axiosConfig)
   }
 
   deleteUser (username) {
