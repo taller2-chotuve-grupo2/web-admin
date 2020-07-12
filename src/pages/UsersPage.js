@@ -29,7 +29,7 @@ const tableIcons = {
   Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
   Check: forwardRef((props, ref) => <Check {...props} ref={ref} />),
   Clear: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
-  Delete: forwardRef((props, ref) => <DeleteOutline {...props} ref={ref} />),
+  Delete: forwardRef((props, ref) => <DeleteOutline {...props} ref={ref} style={{ color: 'white' }} />),
   DetailPanel: forwardRef((props, ref) => <ChevronRight {...props} ref={ref} />),
   Edit: forwardRef((props, ref) => <Edit {...props} ref={ref} />),
   Export: forwardRef((props, ref) => <SaveAlt {...props} ref={ref} />),
@@ -41,13 +41,14 @@ const tableIcons = {
   ResetSearch: forwardRef((props, ref) => <Clear {...props} ref={ref} />),
   Search: forwardRef((props, ref) => <Search {...props} ref={ref} />),
   SortArrow: forwardRef((props, ref) => <ArrowDownward {...props} ref={ref} />),
-  ThirdStateCheck: forwardRef((props, ref) => <Remove {...props} ref={ref} />),
+  ThirdStateCheck: forwardRef((props, ref) => <Remove {...props} ref={ref} style={{ color: 'white' }} />),
   ViewColumn: forwardRef((props, ref) => <ViewColumn {...props} ref={ref} />)
 }
 
 const baseUrl = process.env.REACT_APP_AUTH_BASE_URL
 const getUsersApi = `${baseUrl}/users/`
 const postUsersApi = `${baseUrl}/user/`
+const deleteUsersApi = (id) => `${baseUrl}/user/${id}`
 
 const axiosConfig = {
   headers: {
@@ -63,9 +64,9 @@ export default function UsersPage () {
   }
 
   return ([
-    <HomeHeader hst={history} />,
-    <HomeRect />,
-    <UsersBody />
+    <HomeHeader hst={history} key='1' />,
+    <HomeRect key='2' />,
+    <UsersBody key='3' />
   ])
 }
 
@@ -126,13 +127,11 @@ class UsersBody extends React.Component {
               new Promise((resolve, reject) => {
                 setTimeout(() => {
                   this.postNewUser(newData).then(() => {
-                    // this.get
                     this.getUsersFromAuth()
                     resolve()
-                    // this.setState({ usersData: [...data, newData] })
                   })
                 }, 1000)
-              })
+              }),
             // onRowUpdate: (newData, oldData) =>
             //   new Promise((resolve, reject) => {
             //     setTimeout(() => {
@@ -144,17 +143,15 @@ class UsersBody extends React.Component {
             //       resolve()
             //     }, 1000)
             //   }),
-            // onRowDelete: oldData =>
-            //   new Promise((resolve, reject) => {
-            //     setTimeout(() => {
-            //       const dataDelete = [...data]
-            //       const index = oldData.tableData.id
-            //       dataDelete.splice(index, 1)
-            //       setData([...dataDelete])
-
-            //       resolve()
-            //     }, 1000)
-            //   })
+            onRowDelete: oldData =>
+              new Promise((resolve, reject) => {
+                setTimeout(() => {
+                  this.deleteUser(oldData.username).then(() => {
+                    this.getUsersFromAuth()
+                    resolve()
+                  })
+                }, 1000)
+              })
           }}
         />
       </div>
@@ -173,5 +170,9 @@ class UsersBody extends React.Component {
 
   postNewUser (userData) {
     return axios.post(postUsersApi, userData, axiosConfig)
+  }
+
+  deleteUser (username) {
+    return axios.delete(deleteUsersApi(username), axiosConfig)
   }
 }
