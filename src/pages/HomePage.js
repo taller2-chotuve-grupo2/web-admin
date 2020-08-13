@@ -1,26 +1,28 @@
 import React from 'react';
 //import { useHistory } from 'react-router-dom';
-import {Button, Row, Container, Navbar, Nav } from "react-bootstrap";
+import { Button, Row, Container, Navbar, Nav } from "react-bootstrap";
 import chotuveLogo from "../storage/chotuve.png";
 import { Redirect, useHistory } from 'react-router-dom';
 
 
 
 export default function HomePage() {
-    
+
     let history = useHistory();
-    if(!localStorage.getItem('user')){
-        return <Redirect to="/login"/>;
+    if (!localStorage.getItem('user')) {
+        return <Redirect to="/login" />;
     }
-    return ([
-        <HomeHeader hst={history}/>,
-        <HomeRect/>
-    ])
+    return (
+        <div>
+            <HomeHeader hst={history} />
+            <HomeRect />
+        </div>
+    )
 }
 
 export class HomeHeader extends React.Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             hst: null,
@@ -47,18 +49,18 @@ export class HomeHeader extends React.Component {
         this.props.hst.push("/app-stats");
     }
 
-    logOut = ()  => {
+    logOut = () => {
         localStorage.removeItem('user')
         this.props.hst.push("/resources");
     }
-      
+
 
     render() {
         return (
             <div>
                 <Container fluid>
                     <Row>
-                        <img src={chotuveLogo} className="rounded float-left" alt="chotuve-logo"/>
+                        <img src={chotuveLogo} className="rounded float-left" alt="chotuve-logo" />
                     </Row>
                 </Container>
 
@@ -71,7 +73,6 @@ export class HomeHeader extends React.Component {
                                 <Button variant="dark" key="navUsers" onClick={this.redirectToUsers}>Users</Button>
                                 <Button variant="dark" key="navMedia" onClick={this.redirectToResources}>Media</Button>
                                 <Button variant="dark" key="navAppStats" onClick={this.redirectToAppStats}>AppStats</Button>
-                                <Button variant="dark" key="navLink" onClick={this.redirectAbout}>Link</Button>
                                 <Button variant="dark" className="logout-btn" key="navLogout" onClick={this.logOut}>Logout</Button>
                             </Nav>
                         </Navbar.Collapse>
@@ -88,7 +89,6 @@ export class HomeRect extends React.Component {
     render() {
         return (
             <div>
-
             </div>
         )
     }
